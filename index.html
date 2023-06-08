@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <header>
+      <h2>TODO</h2>
+      <img src="images/icon-sun.svg" id="light">
+    </header>
+    <div class="create">
+      <div class="create-left">
+        <input type="checkbox" name="" id="create-checkbox">
+        <input type="text" id="create" placeholder="Currently typing">
+     </div>
+     <div class="create-right">
+      <button onclick="createTodo()">create</button>
+     </div>
+    </div>
+    <div class="todo-list">
+      <div class="lists">
+        <div class="list">
+          <div class="list-left">
+            <input type="checkbox" name="" id="list-checkbox">
+            <p class="list-par">First todo</p>
+         </div>
+         <img src="images/icon-cross.svg" class="cross">
+        </div>
+      </div>
+      <div class="feet">
+        <div class="feet3">
+          <div class="feet1">
+            <p>5 items left</p>
+          </div>
+          <div class="feet2">
+            <p id="all-list">All</p>
+            <p id="active">Active</p>
+            <p id="complete">Completed</p>
+          </div>
+       </div>
+        <p id="clear">Clear Completed</p>
+      </div>
+    </div>
+    <p class="foot">Drag and drop to reorder list</p>
+  </section>
+
+ <script src="./index.js"></script>
+</body>
+</html>
