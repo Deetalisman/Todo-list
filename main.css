@@ -141,6 +141,10 @@ header img{
     text-align: center;
     margin-top: 3rem;
 }
+small{
+    color: var(--lightgray);
+    font-size: 1.5rem;
+}
 @media screen and (max-width:560px) {
     body{
         background-image: url(images/bg-mobile-dark.jpg);

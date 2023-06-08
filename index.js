@@ -3,6 +3,10 @@
  
  function createTodo() {
     const createV = create.value;
+    const err = document.querySelector("small")
+    if(createV == ""){
+      err.innerHTML = "add a todo"
+    } else{
     var div = document.createElement("div");
     var checkDiv = document.createElement("div");
    var checkboxD = document.createElement("input");
@@ -25,6 +29,7 @@
     list.appendChild(div);
     create.value = "";
     saveData();
+    }
  };
 
  //--------delete and line through---------------------///
@@ -56,6 +61,7 @@ light.addEventListener("click", function(e) {
   saveData();
 }) ;
 
+//change body background
 function dark(){
 const body = document.querySelector("body");
   if(body.classList.contains("back")){
