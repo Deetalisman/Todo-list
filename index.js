@@ -28,6 +28,7 @@
     const list = document.querySelector(".lists")
     list.appendChild(div);
     create.value = "";
+    err.innerHTML = "";
     saveData();
     }
  };
